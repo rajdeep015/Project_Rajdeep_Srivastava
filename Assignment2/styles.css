@@ -1,0 +1,167 @@
+/* Basic reset and styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header and Navigation styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: small;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Logo and Items on the Left */
+.logo img {
+  max-height: 40px;
+  /* Set maximum height for the logo */
+}
+
+/* Right-side Elements */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  width: Fixed (276px);
+  height: Hug (38px);
+  top: 14px;
+  left: 918px;
+  padding: 7px;
+  gap: 14px;
+  border: white solid 1px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-bar img {
+  Size:"16px";
+  Fill:False;
+  width: 24px;
+  height: 24px;
+}
+
+.search-bar input[type="text"] {
+  width: 144px;
+  height: 18px;
+  border: 1px;
+  border: 1px solid #FFFFFF;
+}
+
+.search-bar button {
+  padding: 8px;
+  background-color: #060606;
+}
+
+.child {
+  width: Hug (72px);
+  height: Hug (26px);
+  top: 20px;
+  left: 1210px;
+  padding: 8px;
+  gap: 10px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons img {
+  height: 40px;
+  /* Set the height for the bell icon */
+  margin: 0 10px;
+}
+
+.icons :nth-child(1) {
+  width: 32px;
+  height: 32px;
+  top: 17px;
+  left: 1293px;
+  gap: 10px;
+}
+
+.icons :nth-child(2) {
+  width: Fixed (49px);
+  height: Hug (32px);
+  top: 17px;
+  /* left: 1336px; */
+  gap: 4px;
+}
+
+.icon .dropdown .dropbtn {
+  margin: 0;
+  width: 9px;
+  height: 4.5px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
