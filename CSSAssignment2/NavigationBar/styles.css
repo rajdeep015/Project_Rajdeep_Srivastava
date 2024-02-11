@@ -1,14 +1,17 @@
-/* Basic reset and styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Header and Navigation styles */
 header {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
+}
+
+.logo img {
+  max-height: 40px;
+  /* Set maximum height for the logo */
 }
 
 nav {
@@ -38,19 +41,17 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-/* Logo and Items on the Left */
-.logo img {
-  max-height: 40px;
-  /* Set maximum height for the logo */
-}
-
-/* Right-side Elements */
-.right {
+.left-menu {
   display: flex;
   align-items: center;
 }
 
-.search-bar {
+.right-menu {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
   width: Fixed (276px);
   height: Hug (38px);
   top: 14px;
@@ -63,14 +64,14 @@ nav ul li a:hover {
   margin-right: 20px;
 }
 
-.search-bar img {
+.search-box img {
   Size:"16px";
   Fill:False;
   width: 24px;
   height: 24px;
 }
 
-.search-bar input[type="text"] {
+.search-box input[type="text"] {
   width: 144px;
   height: 18px;
   border: 1px;
@@ -78,17 +79,9 @@ nav ul li a:hover {
 }
 
 .search-bar button {
+  color: #fff;
   padding: 8px;
   background-color: #060606;
-}
-
-.child {
-  width: Hug (72px);
-  height: Hug (26px);
-  top: 20px;
-  left: 1210px;
-  padding: 8px;
-  gap: 10px;
 }
 
 .icons {
@@ -102,28 +95,6 @@ nav ul li a:hover {
   margin: 0 10px;
 }
 
-.icons :nth-child(1) {
-  width: 32px;
-  height: 32px;
-  top: 17px;
-  left: 1293px;
-  gap: 10px;
-}
-
-.icons :nth-child(2) {
-  width: Fixed (49px);
-  height: Hug (32px);
-  top: 17px;
-  /* left: 1336px; */
-  gap: 4px;
-}
-
-.icon .dropdown .dropbtn {
-  margin: 0;
-  width: 9px;
-  height: 4.5px;
-}
-
 /* Dropdown */
 .dropdown {
   position: relative;
@@ -135,7 +106,7 @@ nav ul li a:hover {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 120px;
-  z-index: 1;
+  left: -100%;
 }
 
 .dropdown-content a {
@@ -158,10 +129,5 @@ nav ul li a:hover {
   color: #fff;
   border: none;
   cursor: pointer;
-  align-items: center;
-}
-
-.left {
-  display: flex;
   align-items: center;
 }
